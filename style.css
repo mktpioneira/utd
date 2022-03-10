@@ -1,0 +1,958 @@
+*{
+    font-family: 'Nunito';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background: rgb(1, 255, 34);
+    color: #fff;
+    border-radius: 5px;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+}
+
+
+@media(min-width: 1800px){
+    main{
+        position: relative;
+        background: rgb(97, 11, 11);
+        width: 100%;
+    }
+
+    div.heads{
+        width: 2000px;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+
+    /*.heads nav#menu{
+        position: relative;
+        top: -150px;
+        font-size: 13pt;
+    }*/
+
+    .heads{
+        position: relative;
+    }
+
+    .heads img{
+        display: block;
+        left: 800%;
+    }
+
+    .heads nav#menu{
+        position: relative;
+        top: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    div#video-institucional{
+        width: 50%;
+    }
+
+    div.help{
+        background: none;
+        top: 250px;
+    }
+
+    div.neg{
+        top: 400px;
+    }
+
+  
+}
+
+
+
+a{
+    height: 0;
+}
+
+main{
+    position: relative;
+    background: #fff;
+    padding: 0px;
+    height: 600vh;
+    top: -50px;
+}
+
+body{
+    margin: 0;
+    height: 0;
+    background: rgb(100, 98, 98);
+}
+
+.cabecalho{
+    position: fixed;
+    background: linear-gradient(260deg, rgb(81, 255, 0), rgb(1, 255, 34), rgb(157, 255, 0));
+    backdrop-filter: blur(5px);
+    color: #fff;
+    height: 50px;
+    margin: 0;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecalho p{
+    position: relative;
+    right: 20%;
+    font-size: 10pt;
+    top: -5px;
+    width: 20%;
+    text-align: center;
+}
+
+#icones{
+    position: relative;
+    width: 10%;
+    top: -2px;
+    right: 12%;
+    margin-right: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 8pt;
+    float: right;
+}
+#icones i{
+    margin-right: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#comunicacao{
+    position: relative;
+    color: rgb(255, 255, 255);
+    float: left;
+    top: -5px;
+    left: 15%;
+}
+#comunicacao p{
+    color: rgb(255, 255, 255);
+    width: 150%;
+}
+#email{
+    position: absolute;
+    top: 0px;
+    left: -80%;
+    width: 10%;    
+}
+
+#email i{
+    margin-right: 10px;
+}
+
+#telefone {
+    top: 0px;
+    left: 180px;
+}
+
+#telefone i{
+    margin-right: 10px;
+}
+.heads{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    left: 0;
+    padding: 30px;
+    top: 25px;
+    z-index: 1;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.548);
+}
+
+.heads img{
+    position: relative;
+    width: 120px;
+    left: 80%;
+    top: -25px;
+}
+
+
+/*menu*/
+nav#menu{
+    position: relative;
+    display: flex;
+    left: 20%;
+}
+
+nav#menu li a {
+    color: rgb(157, 255, 0);
+}
+
+nav#menu ul{
+    width: 650px;
+}
+
+nav#menu li{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 0%;
+    border-radius: 16px;
+    padding: 5px;
+    width: 100px;
+    font-size: 10pt;
+
+}
+
+nav#menu li > ul{
+    display: none;
+    position: absolute;
+}
+
+nav#menu li:hover{
+    background-color: rgb(157, 255, 0);
+    color: rgb(255, 255, 255);
+}
+
+nav#menu li:hover > ul{
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(89, 156, 33);
+    width: 200px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.089);
+    padding: 5px; 
+}
+
+nav#menu li:hover > ul li{
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+    border-radius: 5px;
+}
+
+
+input[type="radio"]{
+    display: none;
+}
+
+#menu i{
+    display: none;
+}
+
+#menu p{
+    display: none;
+}
+
+main #btn-whatsapp{
+    position: relative;
+    z-index: 1;
+}
+
+main #btn-whatsapp img{
+    position: fixed;
+    width: 2%;
+    top: 90%;
+    left: 95%;
+}
+
+#btn-whatsapp img:hover{
+    animation: vibration 0.1s;
+    animation-iteration-count: 3;
+}
+
+@keyframes vibration{
+    0%{margin-left: 0%;}
+    25%{margin-left: 5px;}
+    50%{margin-left: 0;}
+    75%{margin-left: -10px;}
+    100%{margin-left: 0;}
+}
+
+#solucao{
+    position: relative;
+    background-color: #497700;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.content-area{
+    position: relative;
+    margin: 0px;
+    top: 100px;
+    border-radius: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+    background: #497700;
+    color: #000;
+    background-attachment: fixed;
+    background-position-y: center;
+    height: 300px;
+}
+
+.content-area h1{
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.content-area div{
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.content-area p{
+    position: relative;
+    top: 130px;
+    transform: translateX(100%);
+    color: #fff;
+    width: 150px;
+}
+
+#images-top{
+    position: relative;
+    top: 10px;
+    left: 10%;
+    width: 90%;
+}
+
+#image-1{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-1 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-1 img:hover{
+    filter: saturate(0%);
+    transform: scale(2);
+}
+#image-2{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-2 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-2 img:hover{
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#image-3{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-3 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-3 img:hover{
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+#image-4{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 110px;
+    height: 110px;
+}
+
+#image-4 img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transition: 0.7s all ease-in-out;
+}
+
+#image-4 img:hover{
+    filter: saturate(0%);
+    transform: scale(2);
+}
+
+
+#video-institucional{
+    position: relative;
+    margin: auto;
+    top: 50px;
+    width: 70%;
+    display: flex;
+    background: url(../img/capa-trabalho.png);
+    color: #fff;
+    font-size: 12pt;
+    border-radius: 5px;
+    padding: 26px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.247);
+}
+#video-institucional iframe{
+    border-radius: 5px;
+}
+
+
+#video-institucional h1, p{
+    position: relative;
+    width: 90%;
+    margin-right: 20px;
+    transform: translateY(20%);
+    float: right;
+    line-height: 25px;
+}   
+
+#video-institucional h1{
+    line-height: 45px;
+}
+
+#video-institucional h1{
+    border-right: 3px solid #fff;
+    margin-bottom: 10px;
+}
+
+.slider{
+    position: relative;
+    top: 50px;
+    padding: 0;
+    height: 600px;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(6, 71, 0);
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+    height: 500px;
+    opacity: 50%;
+}
+
+
+
+.slide input[type="radio"]{
+    position: relative;
+    z-index: 1000;
+    top: 50px;
+    display: block;
+}   
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    left: 20%;
+}
+
+.manual-btn{
+    border: 2px solid rgb(81, 255, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:hover{
+    background: rgb(81, 255, 0);
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(89, 156, 33);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(89, 156, 33);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(89, 156, 33);
+}
+
+/*loading*/
+
+
+.div-trabalhos{
+    position: relative;
+    text-align: left;
+    top: 200px;
+    width: 100%;
+    padding: 10px;
+    height: 320px;
+    background: url(../img/capa-trabalho.png);
+    color: #fff;
+}
+
+.div-trabalhos h1{
+    position: relative;
+    width: 50%;
+    left: 10%;
+    height: 10px;
+    top: 0px;
+}
+
+.div-trabalhos p{
+    position: relative;
+    margin-left: 100px;
+    top: 50px;
+    width: 70%;
+    left: -19%;
+    margin: 10px;
+}
+
+.div-trabalhos button{
+    position: relative;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(260deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 100px;
+    left: 100%;
+    width: 20%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.div-trabalhos button:hover{
+    background: linear-gradient(20deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+}
+
+.div-trabalhos .conteudo{
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+
+.help{
+    position: relative;
+    padding: 30px;
+    top: 200px;
+    height: 550px;
+    text-align: center;
+    display: block;
+    color: #000;
+    background:none;
+}
+
+.help h1{
+    width: 50%;
+    margin:auto
+}
+
+.help p{
+    display: flex;
+    width: 70%;
+    right: 200px;
+    margin: auto;
+}
+
+
+.help #ico{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: none;
+    top: 50px;
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+}
+
+.help #ico i{
+    position: relative;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 0;
+    top: -50px;
+    color: rgb(0, 83, 11);
+    border-radius: 100%;
+    border: 1px solid rgb(0, 83, 11);
+    padding: 25px;
+    font-size: 40pt;
+    transition: 0.6s all ease-in-out;
+}
+
+.help #ico i:hover{
+    border-color: rgb(0, 167, 22);
+    color: rgb(73, 119, 0);
+}
+
+
+.help #ico h1{
+    position: relative;
+    font-size: 13pt;
+    margin-top: -10px;
+    width: 80%;
+}
+
+.help #ico p{
+    display: block;
+    width: 80%;
+    left: -10%;
+}
+
+.conteudo-2{
+    width: 50%;
+    margin: auto;
+}
+
+.neg{
+    position: relative;
+    top: 450px;
+    color: #000;
+    background: url(../img/capa-trabalho.png);
+    height: 320px;
+}
+
+.neg h1{
+    width: 50%;
+    color: #fff;
+}
+
+.neg .text{
+    position: relative;
+    top: 50px;
+    left: 10%;
+}
+
+.neg .text p{
+    width: 40%;
+    color: #fff;
+    left: 1;
+    float: left;
+}
+
+.neg button{
+    position: relative;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(260deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 50px;
+    left: 15%;
+    width: 10%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.neg button:hover{
+    background: linear-gradient(20deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+}
+
+.conteudo-3{
+    width: 50%;
+    margin: auto;
+}
+
+.clients{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    height: 420px;
+    background-color: #497700;
+    top: 400px;
+    overflow: hidden;
+}
+.clients .text-div{
+    position: relative;
+    top: 70px;
+}
+
+.clients .text-div p{
+    width: 30%;
+    left: -35%
+}
+
+.clients .im{
+    position: relative;
+    display: flex;
+    width: 1550px;
+}
+
+.clients .im img{
+    position: relative;
+    top: 70px;
+    margin: 60px;
+}
+
+.clients .im img#suz{
+    width: 100px;
+    height: 80px;
+}
+
+.clients .im img#aru{
+    width: 100px;
+    height: 90px;
+}
+
+.clients .im img#cetes{
+    width: 200px;
+    height: 90px;
+}
+
+.clients .im img#ger{
+    width: 200px;
+    height: 100px;
+}
+
+.clients .im img#merce{
+    width: 200px;
+    height: 130px;
+}
+
+.clients .im img#sie{
+    position: relative;
+    top: 100px;
+    width: 200px;
+    height: 30px;
+}
+
+.conteudo-4{
+    width: 50%;
+    margin: auto;
+}
+
+
+.tech{
+    position: relative;
+    top: 400px;
+    background: url(../img/capa-trabalho.png);
+    height: 350px;
+    justify-content: center;
+    display: flex;
+}
+
+.tech .text-div2{
+    position: relative;
+    top: -20px;
+    left: 20%;
+    text-align: center;
+    color: #fff;
+    width: 50%;
+}
+
+
+
+.tech button{
+    position: absolute;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(260deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 280px;
+    left: 42%;
+    width: 12%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+.conteudo-5{
+    width: 60%;
+    margin: auto;
+}
+.rodape{
+    position: relative;
+    background-color: #303030;
+    height: 500px;
+}
+
+.rodape img{
+    position: relative;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+}
+
+#all{
+    position: relative;
+    width: 50%;
+    margin: auto;
+    background: #303030;
+    height: 320px;
+    padding: 20px;
+}
+
+#all p{
+    position: relative;
+    top: -100px;
+    left: 10%;
+    color: #fff;
+    margin: 10px;
+}
+
+.icon-media{
+    position: relative;
+    width: 50%;
+    top: 50px;
+   left: 35%;
+}
+
+.icon-media i{
+    color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 5px #424242bd;
+    margin: 10px;
+    transition: 1s;
+}
+
+.icon-media i:hover{
+    background-color: #fff;
+    color: #303030;
+    transform: scale(2);   
+}
+
+.prop{
+    position: absolute;
+    left: 60%;
+    margin: 50px;
+    top: -30px;
+    width: 30%;
+    color: #fff;
+    height: 420px;
+}
+
+.prop #text-3{
+    text-align: left;
+}
+.prop #text-3 p{
+    float: left;
+    width: 50%;
+}
+
+.prop input, textarea{
+    position: relative;
+    top: 10px;
+    left: -08%;
+    margin: 5px;
+    padding: 10px;
+    width: 50%;
+    outline: none;
+    border-radius: 10px;
+    border: 0;
+}
+
+.prop textarea{
+    top: 0px;
+    outline: none;
+    height: 100px;
+}
+
+.prop button{
+    position: absolute;
+    border-radius: 36px;
+    outline: none;
+    border: 0;
+    background: linear-gradient(260deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+    font-size: 13pt;
+    color: #fff;
+    font-weight: bold;
+    top: 380px;
+    left: 1;
+    width: 20%;
+    padding: 0;
+    height: 50px;
+    transition: 0.6s all ease-in-out;
+    cursor: pointer;
+}
+
+.prop button:hover{
+    background: linear-gradient(20deg, rgba(81, 255, 0, 0.747),  rgba(157, 255, 0, 0.753));
+}
+
+.prop .finish p{
+    position: relative;
+    margin: 0;
+    top: -100px;
+    width: 50%;
+}
+

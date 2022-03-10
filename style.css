@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: 'Nunito';
-    src: url(../fonts/Nunito-VariableFont_wght.ttf);
+    src: url(Nunito-VariableFont_wght.ttf);
 }
 
 
@@ -409,7 +409,7 @@ main #btn-whatsapp img{
     top: 50px;
     width: 70%;
     display: flex;
-    background: url(../img/capa-trabalho.png);
+    background: url(capa-trabalho.png);
     color: #fff;
     font-size: 12pt;
     border-radius: 5px;
@@ -553,7 +553,7 @@ main #btn-whatsapp img{
     width: 100%;
     padding: 10px;
     height: 320px;
-    background: url(../img/capa-trabalho.png);
+    background: url(capa-trabalho.png);
     color: #fff;
 }
 
@@ -680,7 +680,7 @@ main #btn-whatsapp img{
     position: relative;
     top: 450px;
     color: #000;
-    background: url(../img/capa-trabalho.png);
+    background: url(capa-trabalho.png);
     height: 320px;
 }
 
@@ -801,7 +801,7 @@ main #btn-whatsapp img{
 .tech{
     position: relative;
     top: 400px;
-    background: url(../img/capa-trabalho.png);
+    background: url(capa-trabalho.png);
     height: 350px;
     justify-content: center;
     display: flex;

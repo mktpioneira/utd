@@ -16,22 +16,22 @@
     src: url(Nunito-VariableFont_wght.ttf);
 }
 
-@media (max-width: 844px){
 
-   body main{
+@media (max-width: 844px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    body main {
         background-color: rgb(161, 161, 161);
-        width: 100vw;   
-        height: 900vh;
+        width: 100vw;
+        height: 628vh;
         margin: auto;
-     }
-
-  
-
-    #btn-whatsapp{
+    }
+    #btn-whatsapp {
         display: none;
     }
-
-    div#video-institucional{
+    div#video-institucional {
         display: block;
         background: #80960e;
         padding: 0;
@@ -40,35 +40,29 @@
         width: 100%;
         top: 50px;
     }
-
-
-    #video-institucional iframe{
+    #video-institucional iframe {
         position: relative;
         top: 20px;
         width: 100%;
         border-radius: 0;
         height: 350px;
     }
-
-    #video-institucional p{
+    #video-institucional p {
         width: 90%;
         display: block;
         float: left;
         margin: 15px;
     }
-
-    div#video-institucional h1{
+    div#video-institucional h1 {
         margin: 15px;
         border: none;
         float: left;
         width: 90%;
     }
-   
-    .cabecalho{
+    .cabecalho {
         display: none;
     }
-
-    div.heads{
+    div.heads {
         background-color: #f1f1f1;
         top: 0;
         width: 100%;
@@ -76,172 +70,205 @@
         justify-items: center;
         align-items: center;
     }
-
-
-    div.heads img{
+    div.heads img {
         top: -50px;
         left: 0;
         margin: 10px;
         right: 0;
     }
-
-
-    div.heads nav#menu{
-       position: absolute;
-       display: none;
-       top: 0px;
-       left: 0px;
-       border-radius: 5px;
-       justify-items: center;
-       align-items: center;
-       height: 850px;
-       background-color: #3b3b3bd8;
-       backdrop-filter: blur(5px);
-       padding: 20px;
-       width: 200px;
-   }
-  
-   div.heads nav#menu li{
-       display: list-item;
-       margin-top: 30px;
-       color: rgb(255, 255, 255);
-       list-style: none;
-       top: -200px;
-       font-size: 13pt;
-   }
-
-   div.heads nav#menu ul{
-       width: 100%;
-       color: #000;
-       z-index: 1;
-   }
-
-   div.heads nav#menu i{
-       position: absolute;
-       display: block;
-       color: #fff;
-       font-size: 13pt;
-   }
-
-   div.heads nav#menu i#menu-bars{
-       position: absolute;
-       left: 0%;
-       font-size: 25pt;
-       top: 30px;     
-       color: #000;
-   }
-
-   div.heads nav#menu input#chk-2:checked ~ div.heads nav#menu{
-     display: block;
-   }
-
-   div.heads nav#menu input{
-       display: block;
-   }
-
-
-   div.heads nav#menu i#times{
-       top: 30px;
-       left: 30%;
-       color: rgb(255, 255, 255);
-       font-size: 25pt;
-   }
-
-
-   div.content-area div{
-       display: block;
-       margin-top: 5px;
-       width: 70%;
-   }
-
-
-  div.content-area{
-      height: 660px;
-  }
-
-  div.content-area p{
-      top: -65px;  
+    div.heads nav#menu {
+        position: absolute;
+        display: none;
+        top: 0px;
+        left: 0px;
+        border-radius: 5px;
+        justify-items: center;
+        align-items: center;
+        height: 850px;
+        background-color: #3b3b3bd8;
+        backdrop-filter: blur(5px);
+        padding: 20px;
+        width: 200px;
+    }
+    div.heads nav#menu li {
+        display: list-item;
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        list-style: none;
+        top: -200px;
+        font-size: 13pt;
+    }
+    div.heads nav#menu ul {
+        width: 100%;
+        color: #000;
+        z-index: 1;
+    }
+    div.heads nav#menu i {
+        position: absolute;
+        display: block;
+        color: #fff;
+        font-size: 13pt;
+    }
+    div.heads nav#menu i#menu-bars {
+        position: absolute;
+        left: 0%;
+        font-size: 25pt;
+        top: 30px;
+        color: #000;
+    }
+    div.heads nav#menu input#chk-2:checked~div.heads nav#menu {
+        display: block;
+    }
+    div.heads nav#menu input {
+        display: block;
+    }
+    div.heads nav#menu i#times {
+        top: 30px;
+        left: 30%;
+        color: rgb(255, 255, 255);
+        font-size: 25pt;
+    }
+    div.content-area div {
+        display: block;
+        margin-top: 5px;
+        width: 70%;
+    }
+    div.content-area {
+        height: 660px;
+    }
+    div.content-area p {
+        top: -65px;
         left: 0;
     }
-
-
-    div.div-trabalhos{
+    div.div-trabalhos {
         height: 420px;
     }
-
     div.div-trabalhos h1 {
         color: rgb(255, 255, 255);
         font-size: 16pt;
         width: 80%;
         top: 0;
         float: left;
-    }  
-
-    div.div-trabalhos p{
+    }
+    div.div-trabalhos p {
         top: 30px;
         width: 100%;
     }
-    
-    div.div-trabalhos div.conteudo{
+    div.div-trabalhos div.conteudo {
         width: 100%;
         height: 320px;
     }
-   
-    div.div-trabalhos button{
+    div.div-trabalhos button {
+        display: block;
+        float: left;
+        top: 100px;
+        left: 10%;
+        width: 75%;
+    }
+    div.help {
+        width: 100%;
+        background-color: none;
+        height: 240vh;
+    }
+    div.help div.conteudo-2 {
         width: 100%;
     }
-
-
-    div.help{
+    div.help div.conteudo-2 h1 {
         width: 100%;
     }
-
-    div.help div.conteudo-2{
-        width: 100%;
-    }
-    
-    div.help div.conteudo-2 h1{
-        width: 100%;
-    }
-
-    div.help div.conteudo-2 p{
+    div.help div.conteudo-2 p {
         width: 100%;
         left: 0;
     }
-
-    div.help div.conteudo-2 div#ico{
+    div.help div.conteudo-2 div#ico {
         width: 100%;
         display: block;
     }
-    div.help div.conteudo-2 div#ico p{
+    div.help div.conteudo-2 div#ico p {
         width: 100%;
         left: 0;
         margin-top: -10px;
         height: 250px;
     }
-
-    div.neg{
-        height: 420px;
-        top: 22%;
+    div.neg {
+        position: relative;
+        top: 180px;
+        height: 440px;
     }
-
-    div.neg h1 {
-        color: rgb(255, 255, 255);
-        font-size: 16pt;
-        width: 80%;
-        top: 0;
-        float: left;
-    }  
-
-   
-   
-    div.neg button{
+    div.neg div.conteudo-3 {
         width: 100%;
     }
-
-
+    div.neg div.conteudo-3 div.text {
+        width: 100%;
+        left: 0%;
+        margin: 5px;
+    }
+    div.neg div.conteudo-3 h1 {
+        font-size: 15pt;
+        width: 80%;
+    }
+    div.neg div.conteudo-3 p {
+        width: 100%;
+    }
+    div.neg button {
+        display: block;
+        float: left;
+        top: 100px;
+        left: 10%;
+        width: 75%;
+    }
+    div.clients {
+        position: relative;
+        top: 200px;
+    }
+    div.clients div.conteudo-4 {
+        width: 100%;
+    }
+    div.clients div.conteudo-4 p {
+        width: 100%;
+        left: 5%;
+    }
+    div.tech {
+        position: relative;
+        top: 200px;
+    }
+    div.tech div.conteudo-5 {
+        width: 100%;
+    }
+    div.tech div.conteudo-5 h1 {
+        width: 100%;
+        font-size: 16pt;
+        text-align: center;
+        right: 0;
+    }
+    div.tech div.conteudo-5 div.text-div2 {
+        left: 5%;
+        width: 90%;
+    }
+    div.tech div.conteudo-5 p {
+        width: 90%;
+    }
+    div.tech button {
+        display: block;
+        float: left;
+        top: 270px;
+        left: 10%;
+        width: 75%;
+    }
+    footer.rodape img {
+        width: 120px;
+    }
+    footer.rodape div.all {
+        position: relative;
+        width: 100%;
+        height: 320px;
+    }
+    footer.rodape div.icon-media i {
+        position: relative;
+        display: inline-block;
+        top: 50px;
+    }
 }
-
 
 @media(min-width: 1800px){
     main{

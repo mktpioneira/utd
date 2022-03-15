@@ -16,15 +16,15 @@
     src: url(../fonts/Nunito-VariableFont_wght.ttf);
 }
 
-@media (max-width: 1805px) {
+@media (max-width: 855px) {
     body {
         margin: 0;
         padding: 0;
     }
     body main {
-        background-color: rgb(161, 161, 161);
+        background-color: rgb(255, 255, 255);
         width: 100vw;
-        height: 628vh;
+        height: 605vh;
         margin: auto;
     }
     #btn-whatsapp {
@@ -84,7 +84,7 @@
         justify-items: center;
         align-items: center;
         height: 850px;
-        background-color: #000000be;
+        background-color: #204204;
         backdrop-filter: blur(55px);
         padding: 20px;
         width: 100%;
@@ -96,13 +96,21 @@
         color: rgb(255, 255, 255);
         list-style: none;
         top: 150px;
-        left: 30%;
         font-size: 13pt;
+        left: 35%;
     }
     div.heads nav#menu ul {
         width: 100%;
         color: #000;
         z-index: 1;
+    }
+    div.heads nav#menu li>ul {
+        background-color: #a6b49b;
+    }
+    div.heads nav#menu li>ul li {
+        margin: 0;
+        top: 0;
+        left: 0;
     }
     div.heads nav#menu i {
         position: absolute;
@@ -144,7 +152,7 @@
     }
     div.content-area p {
         top: -65px;
-        left: 100%;
+        left: 150%;
     }
     div.div-trabalhos {
         height: 420px;
@@ -167,9 +175,9 @@
     div.div-trabalhos button {
         display: block;
         float: left;
-        top: 100px;
-        left: 10%;
-        width: 75%;
+        top: 20px;
+        left: -50%;
+        width: 65%;
     }
     div.help {
         width: 100%;
@@ -239,7 +247,9 @@
         top: 200px;
     }
     div.tech div.conteudo-5 {
+        position: relative;
         width: 100%;
+        top: 0px;
     }
     div.tech div.conteudo-5 h1 {
         width: 100%;
@@ -257,7 +267,7 @@
     div.tech button {
         display: block;
         float: left;
-        top: 270px;
+        top: 190px;
         left: 10%;
         width: 75%;
     }
@@ -295,11 +305,10 @@
 }
 
 @media(min-width: 1800px) {
-    main {
+    body main {
         position: relative;
-        background: rgb(97, 11, 11);
         width: 100%;
-        height: 100vh;
+        height: 300vh;
     }
     div.heads {
         width: 2000px;
@@ -326,19 +335,40 @@
         padding: 0;
     }
     div#video-institucional {
-        width: 50%;
+        width: 45%;
     }
     div.help {
         background: none;
-        top: 250px;
+        top: 100px;
     }
     div.neg {
-        top: 400px;
+        top: 170px;
+    }
+    div.div-trabalhos {
+        position: relative;
+        top: 100px;
+    }
+    div.clients {
+        top: 170px;
+    }
+    div.tech {
+        top: 170px;
+    }
+    div.content-area div#images-top {
+        padding: 0;
+        width: 50%;
+        left: 0;
+        top: 30px;
+        margin: auto;
     }
 }
 
 #chk2:checked~nav#menu {
     left: -200%;
+}
+
+#chk1:checked~nav#menu {
+    left: 0%;
 }
 
 a {
@@ -352,6 +382,17 @@ label {
     margin: 0;
     margin: auto;
     font-size: 16pt;
+    text-align: center;
+}
+
+label#l1 {
+    z-index: -1;
+}
+
+label#l2 {
+    position: relative;
+    margin: auto;
+    top: 100px;
 }
 
 label p {
@@ -369,7 +410,7 @@ main {
     position: relative;
     background: #fff;
     padding: 0px;
-    height: 318vh;
+    height: 480vh;
     top: -50px;
 }
 
@@ -497,6 +538,7 @@ nav#menu li {
     padding: 5px;
     width: 100px;
     font-size: 10pt;
+    cursor: pointer;
 }
 
 nav#menu li>ul {
@@ -624,8 +666,8 @@ main #btn-whatsapp img {
 #images-top {
     position: relative;
     top: 10px;
-    left: 10%;
-    width: 90%;
+    width: 50%;
+    margin: auto;
 }
 
 #image-1 {
@@ -780,12 +822,13 @@ p {
 /*css for manual slide navigation*/
 
 .navigation-manual {
-    position: absolute;
+    position: relative;
     width: 800px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
-    left: 20%;
+    align-items: center;
+    left: 30%;
 }
 
 .manual-btn {
@@ -853,10 +896,10 @@ p {
 .div-trabalhos {
     position: relative;
     text-align: left;
-    top: 200px;
+    top: 100px;
     width: 100%;
     padding: 10px;
-    height: 320px;
+    height: 420px;
     background: url(capa-trabalho.png);
     color: #fff;
 }
@@ -889,7 +932,8 @@ p {
     color: #fff;
     font-weight: bold;
     top: 100px;
-    width: 20%;
+    transform: translate(100%, 150%);
+    width: 30%;
     padding: 0;
     height: 50px;
     transition: 0.6s all ease-in-out;
@@ -909,7 +953,7 @@ p {
 .help {
     position: relative;
     padding: 30px;
-    top: 200px;
+    top: 100px;
     height: 550px;
     text-align: center;
     display: block;
@@ -979,14 +1023,14 @@ p {
 
 .neg {
     position: relative;
-    top: 450px;
+    top: 350px;
     color: #000;
     background: url(capa-trabalho.png);
-    height: 320px;
+    height: 450px;
 }
 
 .neg h1 {
-    width: 50%;
+    width: 65%;
     color: #fff;
 }
 
@@ -997,7 +1041,7 @@ p {
 }
 
 .neg .text p {
-    width: 40%;
+    width: 60%;
     color: #fff;
     left: 1;
     float: left;
@@ -1014,7 +1058,7 @@ p {
     font-weight: bold;
     top: 50px;
     left: 15%;
-    width: 10%;
+    width: 20%;
     padding: 0;
     height: 50px;
     transition: 0.6s all ease-in-out;
@@ -1036,7 +1080,7 @@ p {
     text-align: center;
     height: 420px;
     background-color: #497700;
-    top: 400px;
+    top: 350px;
     overflow: hidden;
 }
 
@@ -1095,13 +1139,13 @@ p {
 }
 
 .conteudo-4 {
-    width: 50%;
+    width: 70%;
     margin: auto;
 }
 
 .tech {
     position: relative;
-    top: 400px;
+    top: 350px;
     background: url(capa-trabalho.png);
     height: 350px;
     justify-content: center;
@@ -1127,8 +1171,8 @@ p {
     color: #fff;
     font-weight: bold;
     top: 260px;
-    left: 42%;
-    width: 12%;
+    left: 35%;
+    width: 22%;
     padding: 0;
     height: 50px;
     transition: 0.6s all ease-in-out;
@@ -1136,7 +1180,7 @@ p {
 }
 
 .conteudo-5 {
-    width: 60%;
+    width: 100%;
     margin: auto;
 }
 
@@ -1249,8 +1293,12 @@ textarea {
     cursor: pointer;
 }
 
-.prop button:hover {
-    background: linear-gradient(20deg, rgba(81, 255, 0, 0.747), rgba(157, 255, 0, 0.753));
+.prop button[type="reset"] {
+    left: 25%;
+}
+
+.prop button[type="reset"]:hover {
+    background: linear-gradient(260deg, rgba(255, 81, 0, 0.747), rgba(255, 0, 0, 0.753));
 }
 
 .prop .finish p {

@@ -35,17 +35,12 @@
 
     <div class="cabe">
         <div class="heads">
+            <label for="chk2" id="l1">
+                <p id="t1">☰</p>
+            </label>
+            <input type="checkbox" name="r1" id="chk2">
             <a href="#"><img src="Logo_Vetor.png" alt="Grupo Pioneira" id="logotipo"></a>
             <nav id="menu">
-                <label for="chk-1">
-                    <input type="radio" name="id" id="chk-1">
-                    <i class="fas fa-bars" id="menu-bars"></i>
-                    <ul>
-
-                        <label for="chk-2">
-                            <input type="radio" name="id" id="chk-2">
-                            <i class="fas fa-times" id="times"></i>
-                        </label>
 
                 <li id="home">início</li>
                 <li id="about">Sobre
@@ -143,7 +138,7 @@
                     <strong><u>1989</u></strong> trabalhando com incineração e autoclavagem
                 </p>
                 <p>Sempre estamos visando o melhor para o meio ambiente, ganhamos até o certificado <strong><u>ISO 14001
-                            e o selo verde</u></strong>. Somos o primeiro incinerador brasileiro que realmente mantém-se ocupado preocupado com a gestão ambiental e sustentabilidade.</p>
+                            e o selo verde</u></strong>. Somos o primeiro incinerador brasileiro que realmente mantén-se ocupado preocupado com a gestão ambiental e sustentabilidade.</p>
             </div>
         </div>
         <div id="btn-whatsapp">
@@ -159,25 +154,25 @@
                 <div id="images-top">
                     <div id="a1">
                         <div id="image-1">
-                            <img src="incineracao-fotos.jpg">
+                            <img src="img/incineracao-fotos.jpg">
                         </div>
                         <p>Incineração de Resíduos</p>
                     </div>
                     <div id="a2">
                         <div id="image-2">
-                            <img src="IMG-20211126-WA0007.jpg">
+                            <img src="img/utd/IMG-20211126-WA0007.jpg">
                         </div>
                         <p>Transporte Garantido</p>
                     </div>
                     <div id="a3">
                         <div id="image-3">
-                            <img src="IMG-20211126-WA0018.jpg" alt="">
+                            <img src="img/utd/IMG-20211126-WA0018.jpg" alt="">
                         </div>
                         <p>Serviço de Autoclavagem</p>
                     </div>
                     <div id="a4">
                         <div id="image-4">
-                            <img src="IMG-20211126-WA0010.jpg" alt="">
+                            <img src="img/utd/IMG-20211126-WA0010.jpg" alt="">
                         </div>
                         <p>Gestão Ambiental</p>
                     </div>
@@ -246,12 +241,12 @@
 
                 </div>
                 <div class="im">
-                    <img src="brasão suzano - WHITE.png" alt="suzano" id="suz">
-                    <img src="aruja - white.png" alt="aruja" id="aru">
-                    <img src="cetes ambi - white.png" alt="cetes ambiental" id="cetes">
-                    <img src="gerdau - rigth.png" alt="gerdau" id="ger">
-                    <img src="MERCE SÓLIDO - white.png" alt="mercedes" id="merce">
-                    <img src="siemens-logo-1 - WHITE.png" alt="siemens" id="sie">
+                    <img src="simbolos/brasão suzano - WHITE.png" alt="suzano" id="suz">
+                    <img src="simbolos/aruja - white.png" alt="aruja" id="aru">
+                    <img src="simbolos/cetes ambi - white.png" alt="cetes ambiental" id="cetes">
+                    <img src="simbolos/gerdau - rigth.png" alt="gerdau" id="ger">
+                    <img src="simbolos/MERCE SÓLIDO - white.png" alt="mercedes" id="merce">
+                    <img src="simbolos/siemens-logo-1 - WHITE.png" alt="siemens" id="sie">
                 </div>
             </div>
         </div>
@@ -330,36 +325,48 @@
         }
 
 
+        let caixa_area = window.document.querySelector('#chk2')
+
+        let valor_dois = window.document.querySelector('#t1')
+
+        if (caixa_area[0].checked) {
+            valor_dois.value += "X"
+
+        } else {
+            //anything
+        }
+
+
 
         /*
-
-                window.addEventListener('scroll', function() {
-                    var he = window.document.querySelector(".cabecalho ")
-                    he.classList.toggle("stick ", window.scrollY > 0)
-                })
-
-                window.addEventListener('scroll', function() {
-                    var divisao = window.document.querySelector('.heads')
-                    var logo = window.document.querySelector('#logotipo')
-                    var area_red = window.document.querySelector('.cabecalho')
-                    var area_blue = window.document.querySelector('.heads')
-                    var menu = window.document.querySelector('#menu')
-
-                    if (divisao.classList.toggle("new ", window.scrollY > 0)) {
-                        logo.style.transition = "1s all ease-in-out "
-                        area_red.style.top = "-35px "
-                        area_red.style.transition = "0.6s all ease-in-out "
-                        area_blue.style.top = "50px "
-                        menu.style.top = "5px "
-
-                    } else {
-                        logo.style.top = '-50px'
-                        area_blue.style.top = "30px "
-                        area_red.style.top = "-30px "
-                        menu.style.top = "0px "
-                    }
-                })
-*/
+    
+                    window.addEventListener('scroll', function() {
+                        var he = window.document.querySelector(".cabecalho ")
+                        he.classList.toggle("stick ", window.scrollY > 0)
+                    })
+    
+                    window.addEventListener('scroll', function() {
+                        var divisao = window.document.querySelector('.heads')
+                        var logo = window.document.querySelector('#logotipo')
+                        var area_red = window.document.querySelector('.cabecalho')
+                        var area_blue = window.document.querySelector('.heads')
+                        var menu = window.document.querySelector('#menu')
+    
+                        if (divisao.classList.toggle("new ", window.scrollY > 0)) {
+                            logo.style.transition = "1s all ease-in-out "
+                            area_red.style.top = "-35px "
+                            area_red.style.transition = "0.6s all ease-in-out "
+                            area_blue.style.top = "50px "
+                            menu.style.top = "5px "
+    
+                        } else {
+                            logo.style.top = '-50px'
+                            area_blue.style.top = "30px "
+                            area_red.style.top = "-30px "
+                            menu.style.top = "0px "
+                        }
+                    })
+    */
         //função de tempo
 
         var data = window.document.getElementById('right')

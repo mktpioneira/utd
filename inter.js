@@ -12,35 +12,42 @@ function send() {
 
 
 
-/*
 
-            window.addEventListener('scroll', function() {
-                var he = window.document.querySelector(".cabecalho ")
-                he.classList.toggle("stick ", window.scrollY > 0)
-            })
 
-            window.addEventListener('scroll', function() {
-                var divisao = window.document.querySelector('.heads')
-                var logo = window.document.querySelector('#logotipo')
-                var area_red = window.document.querySelector('.cabecalho')
-                var area_blue = window.document.querySelector('.heads')
-                var menu = window.document.querySelector('#menu')
+window.addEventListener('scroll', function() {
+    var he = window.document.querySelector(".cabecalho ")
+    he.classList.toggle("stick", window.scrollY > 0)
+})
 
-                if (divisao.classList.toggle("new ", window.scrollY > 0)) {
-                    logo.style.transition = "1s all ease-in-out "
-                    area_red.style.top = "-35px "
-                    area_red.style.transition = "0.6s all ease-in-out "
-                    area_blue.style.top = "50px "
-                    menu.style.top = "5px "
+window.addEventListener('scroll', function() {
 
-                } else {
-                    logo.style.top = '-50px'
-                    area_blue.style.top = "30px "
-                    area_red.style.top = "-30px "
-                    menu.style.top = "0px "
-                }
-            })
-*/
+    var head = this.window.document.querySelector('.cabecalho')
+    var head_2 = this.window.document.querySelector('.heads')
+    var logo = this.window.document.querySelector('#logotipo')
+
+
+    if (this.window.scrollY > 0) {
+        head.style.top = '-50px'
+        head_2.style.top = '-10px'
+        head_2.style.color = '#fff'
+        head_2.style.background = '#889c1e'
+        logo.src = 'Logo_Vetor - white.png'
+        logo.style.top = '-20px'
+
+        head_2.classList.toggle("new")
+    } else {
+        head.style.top = '0'
+        head_2.style.top = '25px'
+        head_2.style.background = 'rgba(255, 255, 255, 0.452)'
+        head_2.style.color = 'rgb(0,0,0)'
+        logo.src = 'Logo_Vetor.png'
+
+    }
+
+
+
+})
+
 //função de tempo
 
 var data = window.document.getElementById('right')
@@ -93,3 +100,22 @@ setInterval(function() {
         turn = 1;
     }
 }, 500);
+
+
+
+const imgs = window.document.querySelector('.im')
+const img = window.document.querySelectorAll("#img img")
+
+let idx = 0
+
+function carrossel() {
+    idx++
+
+    if (idx > img.length - 1) {
+        idx = 0
+    }
+
+    imgs.style.transform = `translateX(${-idx * 500}px)`
+
+    setInterval(carrossel, 1800)
+}

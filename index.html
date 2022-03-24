@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,11 @@
     <header class="cabecalho">
         <div class="head">
             <div id="comunicacao">
-                <p id="email"> <i class="far fa-envelope"></i>utd@pioneira.com.br</p>
+                <p id="email"> <i class="far fa-envelope"></i>incinerador@pioneira.com.br</p>
                 <p id="telefone"> <i class="fas fa-phone-alt"></i>(11) 98122-4282</p>
+                <a href="http://certificado.pioneira.com.br/">
+                    <p id="certificado"><i class="fa-solid fa-memo-circle-check"></i>Consultar Certificado</p>
+                </a>
             </div>
             <p> <i class="fas fa-lock"></i></i> Área do Cliente</p>
             <div id="icones">
@@ -39,25 +42,32 @@
 
             <input type="radio" name="r1" id="chk2">
             <input type="radio" name="r1" id="chk1">
-            <a href="#"><img src="Logo_Vetor.png" alt="Grupo Pioneira" id="logotipo"></a>
+            <a href="#"><img src="img/Logo_Vetor.png" alt="Grupo Pioneira" id="logotipo"></a>
             <nav id="menu">
-                <label for="chk2" id="l2">X</label>
+
                 <li id="home">início</li>
                 <li id="about">Sobre
                     <ul id="sub-bout">
                         <li>Nossa História</li>
-                        <li>Nossos reconhecimentos</li>
-                        <li>Prêmios</li>
+                        <li>Certificações e Prêmios</li>
                     </ul>
                 </li>
-                <li id="portal">Portal</li>
+                <li>Serviços</li>
+                <li id="portal">Blog</li>
                 <li id="contact">Contato
                     <ul id="sub-contact">
                         <li>Fale Conosco</li>
                         <li>Área do Cliente</li>
+                        <a href="http://portaldocliente.pioneira.com.br/">
+                            <li>2ª Via de Boletos</li>
+                        </a>
+                        <a href="http://certificado.pioneira.com.br/">
+                            <li>Certificado</li>
+                        </a>
                     </ul>
-                    <li>Bloger</li>
                 </li>
+                <li id="budgets">Orçamentos</li>
+                <li id="work">Trabalhe Conosco</li>
                 <p id="redes">Siga nossas redes sociais</p>
                 <p id="redes2">
 
@@ -93,326 +103,249 @@
         </div>
     </div>-->
     <!--image slider strart-->
-    <div class="slider">
-        <div class="slides">
-            <!--radio buttons start-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <!--radio button end-->
-            <div class="slide first">
-                <img src="img slide 1.png" alt="">
-            </div>
-            <div class="slide">
-                <img src="IMG-20211126-WA0017.jpg" alt="">
-            </div>
-            <div class="slide-2">
-                <img src="IMG-20211126-WA0018.jpg" alt="">
-            </div>
 
-            <!--image slide end-->
-            <!--automatic navigation start-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-            </div>
-            <!--automatic navigation end-->
-        </div>
-        <!--manual navigation start-->
-        <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-        </div>
-        <!--manual navigation end-->
-    </div>
     <main>
-        <div id="video-institucional">
-            <div id="video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/NITX-BJrB8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="container">
+            <div class="slider">
+                <div class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!--radio button end-->
+                    <div class="slide first">
+                        <img src="img slide 1.png" alt="">
+                        <h1>O melhor incinerador de resíduos da <span style="background-color: #889c1e;">américa latina!</span></h1>
+                        <button>Clique aqui!</button>
+                    </div>
+                    <div class="slide">
+                        <img src="IMG-20211126-WA0017.jpg" alt="">
+                        <h1>Por que estamos <span style="background-color: #889c1e;">sempre evoluindo?</span></h1>
+                        <button>Saiba mais...</button>
+                    </div>
+                    <div class="slide-2">
+                        <img src="IMG-20211126-WA0018.jpg" alt="">
+                        <h1>Por que sua empresa deve nos <span style="background-color: #889c1e;">contratar?</h1></span>
+                            <button>Entenda sobre!</button>
+                    </div>
+
+                    <!--image slide end-->
+                    <!--automatic navigation start-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!--automatic navigation end-->
+                </div>
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
             </div>
-            <div id="text">
-                <h1>Olá, somos a Pioneira UTD</h1>
-                <p>Nós da Unidade Integrada e Destinação Final de Resíduos somos uma empresa que está no segmento desde
-                    <strong><u>1989</u></strong> trabalhando com incineração e autoclavagem
-                </p>
-                <p>Sempre estamos visando o melhor para o meio ambiente, ganhamos até o certificado <strong><u>ISO 14001
+            <div id="video-institucional">
+                <div id="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NITX-BJrB8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div id="text">
+                    <h1>Olá, somos a Pioneira UTD</h1>
+                    <p>Nós da Unidade Integrada e Destinação Final de Resíduos somos uma empresa que está no segmento desde
+                        <strong><u>1989</u></strong> trabalhando com incineração e autoclavagem
+                    </p>
+                    <p>Sempre estamos visando o melhor para o meio ambiente, ganhamos até o certificado <strong><u>ISO 14001
                             e o selo verde</u></strong>. Somos o primeiro incinerador brasileiro que realmente mantén-se ocupado preocupado com a gestão ambiental e sustentabilidade.</p>
+                </div>
             </div>
-        </div>
-        <div id="btn-whatsapp">
-            <a href="https://wa.me/c/5511993350288"><img src="whatsapp.png" alt=""></a>
-        </div>
-        <div class="content-area">
-            <div id="solucao">
-                <h1>Nossas Soluções</h1>
+            <div id="btn-whatsapp">
+                <a href="https://wa.me/c/5511993350288"><img src="whatsapp.png" alt=""></a>
             </div>
-            <div class="imagens">
+            <div class="content-area">
+                <div id="solucao">
+                    <h1>Nossas Soluções</h1>
+                </div>
+                <div class="imagens">
 
 
-                <div id="images-top">
-                    <div id="a1">
-                        <div id="image-1">
-                            <img src="incineracao-fotos.jpg">
+                    <div id="images-top">
+                        <div id="a1">
+                            <div id="image-1">
+                                <img src="incineracao-fotos.jpg">
+                            </div>
+                            <p>Incineração de Resíduos</p>
                         </div>
-                        <p>Incineração de Resíduos</p>
-                    </div>
-                    <div id="a2">
-                        <div id="image-2">
-                            <img src="IMG-20211126-WA0007.jpg">
+                        <div id="a2">
+                            <div id="image-2">
+                                <img src="IMG-20211126-WA0007.jpg">
+                            </div>
+                            <p>Transporte Garantido</p>
                         </div>
-                        <p>Transporte Garantido</p>
-                    </div>
-                    <div id="a3">
-                        <div id="image-3">
-                            <img src="IMG-20211126-WA0018.jpg" alt="">
+                        <div id="a3">
+                            <div id="image-3">
+                                <img src="IMG-20211126-WA0018.jpg" alt="">
+                            </div>
+                            <p>Serviço de Autoclavagem</p>
                         </div>
-                        <p>Serviço de Autoclavagem</p>
-                    </div>
-                    <div id="a4">
-                        <div id="image-4">
-                            <img src="IMG-20211126-WA0010.jpg" alt="">
+                        <div id="a4">
+                            <div id="image-4">
+                                <img src="IMG-20211126-WA0010.jpg" alt="">
+                            </div>
+                            <p>Gestão Ambiental</p>
                         </div>
-                        <p>Gestão Ambiental</p>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="div-trabalhos">
-            <div class="conteudo">
-                <h1>Trabalhamos para ter um mundo mais sustentável</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
-                    Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
-                </p>
-                <a href="https://offdesenvolvimento.com.br/pioneira/"><button>Conheça o nosso trabalho</button></a>
+            <div class="div-trabalhos">
+                <div class="conteudo">
+                    <h1>Trabalhamos para ter um mundo mais sustentável</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim.
+                        Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
+                    </p>
+                    <a href="https://offdesenvolvimento.com.br/pioneira/"><button>Conheça o nosso trabalho</button></a>
+                </div>
             </div>
-        </div>
 
-        <div class="help">
-            <div class="conteudo-2">
-                <h1>Onde podemos ajudar com a política ESG da sua empresa</h1>
-                <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Rem amet voluptatibus et accusantium eius ab natus debitis et sunt autem.</p>
-                <div id="ico">
-                    <div id="ind">
-                        <i class="fas fa-industry"></i>
-                        <h1>Resíduos Industriais</h1>
-                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
-                    </div>
-                    <div id="med">
-                        <i class="fas fa-syringe"></i>
-                        <h1>Resíduos Hospitalares</h1>
-                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
-                    </div>
-                    <div id="rev">
-                        <i class="fas fa-recycle"></i>
-                        <h1>Manufatura Reversa</h1>
-                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
-                    </div>
-                    <div id="global">
-                        <i class="fas fa-globe"></i>
-                        <span style="width: 100%;">
+            <div class="help">
+                <div class="conteudo-2">
+                    <h1>Onde podemos ajudar com a política ESG da sua empresa</h1>
+                    <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Rem amet voluptatibus et accusantium eius ab natus debitis et sunt autem.</p>
+                    <div id="ico">
+                        <div id="ind">
+                            <i class="fas fa-industry"></i>
+                            <h1>Resíduos Industriais</h1>
+                            <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                        </div>
+                        <div id="med">
+                            <i class="fas fa-syringe"></i>
+                            <h1>Resíduos Hospitalares</h1>
+                            <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                        </div>
+                        <div id="rev">
+                            <i class="fas fa-recycle"></i>
+                            <h1>Manufatura Reversa</h1>
+                            <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                        </div>
+                        <div id="global">
+                            <i class="fas fa-globe"></i>
+                            <span style="width: 100%;">
                             <h1>Gerenciamento Global de Resíduos</h1>
                         </span>
-                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                            <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="neg">
-            <div class="conteudo-3">
-                <div class="text">
-                    <h1>Adoramos transformar negócios em atividade que prezam à gestão ambiental</h1>
-                    <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis
-                        id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+            <div class="neg">
+                <div class="conteudo-3">
+                    <div class="text">
+                        <h1>Adoramos transformar negócios em atividade que prezam à gestão ambiental</h1>
+                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis
+                            id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam</p>
+                    </div>
+                </div>
+                <button>Veja nossas soluções</button>
+            </div>
+
+
+            <div class="clients">
+                <div class="conteudo-4">
+                    <div class="text-div">
+                        <h1>Clientes que fazem parte de um grupo sustentável</h1>
+                        <p>Temos orgulho em prestar nossos serviços para empresas que importam com o meio ambiente</p>
+
+                    </div>
+                    <div class="im">
+                        <img src="aruja - white.png" alt="Arujá" id="arj">
+                        <img src="brasão suzano - WHITE.png" alt="Suzano" id="suz">
+                        <img src="cetes ambi - white.png" alt="Cetes Ambiental" id="cts">
+                        <img src="rolls - white.png" alt="Rolls Royce" id="ryc">
+                        <img src="siemens-logo-1 - WHITE.png" alt="Siemens" id="ss">
+                        <img src="MERCE SÓLIDO - white.png" alt="Mercedes-Benz" id="mb">
+                        <img src="gerdau - rigth.png" alt="Gerdau" id="gr">
+                        <img src="Logo-Hospital - white.png" alt="Hospital Saint Nicholas" id="hsn">
+                    </div>
                 </div>
             </div>
-            <button>Veja nossas soluções</button>
-        </div>
 
-
-        <div class="clients">
-            <div class="conteudo-4">
-                <div class="text-div">
-                    <h1>Clientes que fazem parte de um grupo sustentável</h1>
-                    <p>Temos orgulho em prestar nossos serviços para empresas que importam com o meio ambiente</p>
-
-                </div>
-                <div class="im">
-                    <img src="brasão suzano - WHITE.png" alt="suzano" id="suz">
-                    <img src="aruja - white.png" alt="aruja" id="aru">
-                    <img src="cetes ambi - white.png" alt="cetes ambiental" id="cetes">
-                    <img src="gerdau - rigth.png" alt="gerdau" id="ger">
-                    <img src="MERCE SÓLIDO - white.png" alt="mercedes" id="merce">
-                    <img src="siemens-logo-1 - WHITE.png" alt="siemens" id="sie">
+            <div class="tech">
+                <div class="conteudo-5">
+                    <div class="text-div2">
+                        <h1>Nós sabemos que a inovação e a tecnologia podem salvar o planeta</h1>
+                        <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Lorem ipsum dolor sit amet. Id possimus obcaecati.
+                        </p>
+                    </div>
+                    <button>Venha conhecer nossas tecnologias</button>
                 </div>
             </div>
-        </div>
 
-        <div class="tech">
-            <div class="conteudo-5">
-                <div class="text-div2">
-                    <h1>Nós sabemos que a inovação e a tecnologia podem salvar o planeta</h1>
-                    <p>Lorem ipsum dolor sit amet. Id possimus obcaecati quo dolores officiis id sint maiores est inventore sed consequatur quis est omnis laboriosam et libero magnam. Lorem ipsum dolor sit amet. Id possimus obcaecati.
+            <!--Cookies e informações de privacidade-->
+
+            <div class="cookies">
+                <p>Usamos cookies no nosso site. Ao aceitar, você concorda com a nossa <a href="#">Política de Privacidade</a></p>
+                <button id="all-recuse">Recusar Tudo</button>
+                <button id="accept">Aceitar</button>
+                <label for="" id="">X</label>
+            </div>
+
+
+            <footer class="rodape">
+                <div id="all">
+                    <a href="#"><img src="Logo_Vetor - white.png" alt=""></a>
+                    <strong>
+                    <p>Pioneira | Unidade Integrada de Destinação Final de Resíduos</p>
+                </strong>
+                    <p onmousemove="mostrar(1)" id="andress"><i class="fas fa-map-marker-alt" id="phone"></i>Rua Antônio da Surreição, 03, Guaió
+                        <nbsp><br>Suzano/SP</nbsp>
                     </p>
+
+
+                    <p><i class="fas fa-phone-alt" id="phone"></i> (11) 98122-4282</p>
+
+                    <p id="right">Todos os direitos reservados&copy;
+                        <p><strong>
+                        <p>Grupo Pioneira
+                    </strong> | Desenvolvido por <strong>Marketing Pioneira</p></strong>
+
                 </div>
-                <button>Venha conhecer nossas tecnologias</button>
-            </div>
+                <div class="icon-media">
+                    <a href="https://www.facebook.com/utdpioneira" target="_blanck"><i class="fab fa-facebook"
+                        id="face"></i></a>
+                    <a href="https://www.instagram.com/utdpioneira/" target="_blanck"><i class="fab fa-instagram"
+                        id="insta"></i></a>
+                    <a href="https://www.linkedin.com/company/utdpioneira/?viewAsMember=true target="><i
+                        class="fab fa-linkedin-in " id="linkedin "></i></a>
+                    <a href="https://www.github.com " target="_blanck "><i class="fab fa-github " id="git "></i></a>
+                    <a href="https://youtube.com " target="_blanck "><i class="fab fa-youtube " id="tube "></i></a>
+                </div>
+
+
+                <div class="prop ">
+                    <div id="text3 ">
+                        <h3>Solicite uma proposta de serviço</h3>
+                        <p id="sub-titulo">Para fazer a solicitação, basta preencger todos seus dados corretamente os campos abaixo e clicar no botão enviar</p>
+                    </div>
+                    <form action="home.php" method="get ">
+                        <p><input type="text " name="cText " id="Textoss" placeholder="Nome"></p>
+                        <p><input type="email " name="cMail " id="tMail" placeholder="E-mail"></p>
+                        <p><input type="tel " name="cTel " id="tTel" placeholder="Telefone"></p>
+                        <p><textarea name="cMensa" id=" " cols="30 " rows="10 " placeholder="Mensagem"></textarea></p>
+                        <div class="finish ">
+                            <button type="submit" onclick="send()">Enviar</button>
+                            <button type="reset">Cancelar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </footer>
         </div>
     </main>
 
-    <footer class="rodape">
-        <div id="all">
-            <a href="#"><img src="Logo_Vetor - white.png" alt="Grupo Pioneira"></a>
-            <strong>
-                <p>Pioneira | Unidade Integrada de Destinação Final de Resíduos</p>
-            </strong>
-            <p onmousemove="mostrar(1)" id="andress"><i class="fas fa-map-marker-alt" id="phone"></i>Rua Antônio da Surreição, 03, Guaió
-                <nbsp><br>Suzano/SP</nbsp>
-            </p>
-
-
-            <p><i class="fas fa-phone-alt" id="phone"></i> (11) 98122-4282</p>
-
-            <img src="frame.png" id="qr" alt="">
-
-            <p id="right">Todos os direitos reservados&copy;
-                <p><strong>
-                    <p>Grupo Pioneira
-                </strong> | Desenvolvido por <strong>Marketing Pioneira</p></strong>
-
-        </div>
-        <div class="icon-media">
-            <a href="https://www.facebook.com/utdpioneira" target="_blanck"><i class="fab fa-facebook"
-                    id="face"></i></a>
-            <a href="https://www.instagram.com/utdpioneira/" target="_blanck"><i class="fab fa-instagram"
-                    id="insta"></i></a>
-            <a href="https://www.linkedin.com/company/utdpioneira/?viewAsMember=true target="><i
-                    class="fab fa-linkedin-in " id="linkedin "></i></a>
-            <a href="https://www.github.com " target="_blanck "><i class="fab fa-github " id="git "></i></a>
-            <a href="https://youtube.com " target="_blanck "><i class="fab fa-youtube " id="tube "></i></a>
-        </div>
-
-
-        <div class="prop ">
-            <div id="text-3 ">
-                <h3>Solicite uma proposta de serviço</h3>
-                <p>Para fazer a solicitação, basta preencger todos seus dados corretamente os campos abaixo e clicar no botão enviar</p>
-            </div>
-            <form action="home.php" method="get ">
-                <p><input type="text " name="cText " id="Textoss" placeholder="Nome "></p>
-                <p><input type="email " name="cMail " id="tMail" placeholder="E-mail "></p>
-                <p><input type="tel " name="cTel " id="tTel" placeholder="Telefone "></p>
-                <p><textarea name=" " id=" " cols="30 " rows="10 " placeholder="Mensagem "></textarea></p>
-                <div class="finish ">
-                    <button type="submit" onclick="send()">Enviar</button>
-                    <button type="reset">Cancelar</button>
-                </div>
-            </form>
-        </div>
-
-    </footer>
-
-    <script>
-        function send() {
-
-            let name = window.document.querySelector('#Textoss').value
-            let email = window.document.querySelector('#tMail').value
-            let fone = window.document.querySelector('#tTel').value
-
-            alert(`Olá, ${name}. Antes de continuar, verifique seus dados! Seu e-mail para contato é: ${email} e seu telefone ${fone}, está correto?`)
-
-        }
-
-
-        let caixa_area = window.document.querySelector('#chk2')
-
-        let valor_dois = window.document.querySelector('#t1')
-
-        if (caixa_area[0].checked) {
-            valor_dois.value += "X"
-
-        } else {
-            //anything
-        }
-
-
-
-        /*
-    
-                    window.addEventListener('scroll', function() {
-                        var he = window.document.querySelector(".cabecalho ")
-                        he.classList.toggle("stick ", window.scrollY > 0)
-                    })
-    
-                    window.addEventListener('scroll', function() {
-                        var divisao = window.document.querySelector('.heads')
-                        var logo = window.document.querySelector('#logotipo')
-                        var area_red = window.document.querySelector('.cabecalho')
-                        var area_blue = window.document.querySelector('.heads')
-                        var menu = window.document.querySelector('#menu')
-    
-                        if (divisao.classList.toggle("new ", window.scrollY > 0)) {
-                            logo.style.transition = "1s all ease-in-out "
-                            area_red.style.top = "-35px "
-                            area_red.style.transition = "0.6s all ease-in-out "
-                            area_blue.style.top = "50px "
-                            menu.style.top = "5px "
-    
-                        } else {
-                            logo.style.top = '-50px'
-                            area_blue.style.top = "30px "
-                            area_red.style.top = "-30px "
-                            menu.style.top = "0px "
-                        }
-                    })
-    */
-        //função de tempo
-
-        var data = window.document.getElementById('right')
-        let receber = new Date();
-        const ano = receber.getFullYear();
-        data.innerHTML += `${ano}`
-
-        /*
-                        //mapa interativo
-
-                        function mostrar(e) {
-
-                            if (e == 1) {
-                                var mapa = window.document.querySelector('#map')
-                                mapa.style.left = '-10%'
-                            }
-
-                            if (e == 2) {
-                                var mapa = window.document.querySelector('#map')
-                                mapa.style.left = '-150%'
-                            }
-
-                        }
-
-                        addEventListener('keydown', function(event) {
-                            let close = window.document.getElementById('map')
-                            if (event.keyCode == 27) {
-                                close.style.left = '-150%'
-                            }
-                        })*/
-
-
-
-
-        let counter = 1;
-        setInterval(function() {
-            window.document.querySelector('#radio' + counter).checked = true;
-            counter++;
-
-            if (counter > 3) {
-                counter = 1;
-            }
-        }, 5000);
-    </script>-->
+    <script src="js/inter.js">
+    </script>
 </body>
 
 </html>

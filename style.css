@@ -1519,7 +1519,7 @@ textarea {
 
 .cookies {
     position: fixed;
-    display: none;
+    display: flex;
     bottom: 00px;
     width: 100%;
     transform: translate(0%);

@@ -16,7 +16,7 @@ function send() {
 
 window.addEventListener('scroll', function() {
     var he = window.document.querySelector(".cabecalho ")
-    he.classList.toggle("stick", window.scrollY > 0)
+    he.classList.toggle("stick", window.scrollY > 1000)
 })
 
 window.addEventListener('scroll', function() {
@@ -29,12 +29,10 @@ window.addEventListener('scroll', function() {
     if (this.window.scrollY > 0) {
         head.style.top = '-50px'
         head_2.style.top = '-10px'
-        head_2.style.color = '#fff'
         head_2.style.background = '#889c1e'
         logo.src = 'Logo_Vetor - white.png'
         logo.style.top = '-20px'
 
-        head_2.classList.toggle("new")
     } else {
         head.style.top = '0'
         head_2.style.top = '25px'
@@ -119,3 +117,30 @@ function carrossel() {
 
     setInterval(carrossel, 1800)
 }
+
+
+
+//cookies
+
+function cookies(e) {
+    let btn_y = window.document.querySelector('#accept')
+    let btn_n = window.document.querySelector('#all-recuse')
+    const area = window.document.querySelector('.cookies')
+
+    if (e == 1) {
+        area.style.bottom = '-500px'
+
+    } else if (e == 2) {
+        area.style.bottom = '-500px'
+    }
+}
+
+addEventListener('scroll', function() {
+    let btn = this.window.document.querySelector('#button_top')
+
+    if (this.scrollY > 100) {
+        btn.style.display = 'flex'
+    } else {
+        btn.style.display = 'none'
+    }
+})

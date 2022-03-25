@@ -16,7 +16,7 @@
     src: url('Nunito-VariableFont_wght.ttf');
 }
 
-@media (max-width: 855px) {
+@media (max-width: 1280px) {
     body {
         margin: 0;
         padding: 0;
@@ -70,16 +70,16 @@
         align-items: center;
     }
     div.heads img {
-        top: -50px;
-        left: 0;
+        top: 210px;
         margin: 10px;
-        right: 0;
+        z-index: 1;
+        top: 20px;
     }
     div.heads nav#menu {
         position: absolute;
         display: block;
         top: 0px;
-        left: -400px;
+        left: -4400px;
         border-radius: 5px;
         justify-items: center;
         align-items: center;
@@ -307,6 +307,27 @@
     footer.rodape div.prop {
         display: none;
     }
+    div.cookies {
+        padding: 0;
+        height: 150px;
+        align-items: center;
+    }
+    div.cookies p {
+        position: relative;
+        top: -10px;
+        font-size: 12pt;
+        margin: 5px;
+        left: 0;
+        width: 50%;
+    }
+    div.cookies button {
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 5pt;
+    }
 }
 
 @media(min-width: 1800px) {
@@ -371,6 +392,9 @@
     footer.rodape {
         top: -100px;
     }
+    div.cookies {
+        width: 100%;
+    }
 }
 
 #chk2:checked~nav#menu {
@@ -383,6 +407,7 @@
 
 a {
     height: 0;
+    color: #000;
 }
 
 label#l1,
@@ -433,6 +458,7 @@ main {
 body {
     margin: 0;
     height: 0;
+    transition: 0.6s all ease-in-out;
 }
 
 .cabecalho {
@@ -797,7 +823,7 @@ main #btn-whatsapp img {
 #video-institucional {
     position: relative;
     margin: auto;
-    top: 50px;
+    top: 90px;
     width: 70%;
     display: flex;
     background: url(capa-trabalho.png);
@@ -833,12 +859,12 @@ p {
 
 .slider {
     position: relative;
-    top: 50px;
+    top: 80px;
     padding: 0;
-    height: 600px;
+    height: 500px;
     width: 100%;
     margin: 0;
-    background-color: rgb(6, 71, 0);
+    background-color: rgb(5, 5, 5);
     overflow: hidden;
 }
 
@@ -1029,7 +1055,7 @@ p {
 
 .slide-2 img {
     height: 500px;
-    width: 100%;
+    width: 200%;
     opacity: 50%;
 }
 
@@ -1112,8 +1138,11 @@ p {
 }
 
 .help p {
-    display: block;
-    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 .help #ico {
@@ -1490,7 +1519,7 @@ textarea {
 
 .cookies {
     position: fixed;
-    display: flex;
+    display: none;
     bottom: 00px;
     width: 100%;
     transform: translate(0%);
@@ -1500,6 +1529,7 @@ textarea {
     font-size: 15pt;
     z-index: 1;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.561);
+    transition: 0.6s all ease-in-out;
 }
 
 .cookies a {
@@ -1539,4 +1569,31 @@ textarea {
     position: relative;
     top: 10px;
     cursor: pointer;
+}
+
+#button_top {
+    position: fixed;
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    background-color: rgba(104, 122, 3, 0.541);
+    bottom: 0;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.6s all ease-in-out;
+}
+
+#button_top:hover {
+    background-color: rgb(104, 122, 3);
+}
+
+#button_top img {
+    display: flex;
+    transform: rotate(180deg);
+    width: 50%;
 }

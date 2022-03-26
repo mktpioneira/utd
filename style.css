@@ -1279,7 +1279,22 @@ p {
     width: 200%;
     top: 100px;
     height: 220px;
+    animation: anima 60s infinite;
 }
+
+@keyframes anima {
+    0% {
+        transform: translate3d(-3270.5px, 0px, 0px);
+        transition: all 2.7s ease 0s;
+        width: 10903px;
+    }
+    100% {
+        transform: translate3d(-6541px, 0px, 0px);
+        transition: all 2.7s ease 0s;
+        width: 10903px;
+    }
+}
+
 
 .clients .im img {
     position: relative;

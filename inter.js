@@ -144,3 +144,22 @@ addEventListener('scroll', function() {
         btn.style.display = 'none'
     }
 })
+
+function clicar(event) {
+
+    let square = window.document.querySelector('.area-main-one')
+    let square_two = window.document.querySelector('.area-main-two')
+
+    if (event == 1) {
+        square.style.height = '500px'
+    } else {
+        square.style.height = '0px'
+    }
+
+
+    if (event == 3) {
+        square_two.style.width = '900px'
+    } else {
+        square_two.style.width = '0px'
+    }
+}
